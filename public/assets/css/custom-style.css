@@ -1,0 +1,203 @@
+/*your custom css goes here*/
+.carousel-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+
+  /* border-left: 0 solid #00ff99; */
+  border-left: 0 solid #e93535;
+
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.carousel-box:hover {
+  padding-left: 0.3rem;
+  border-left: 0.3rem solid #e93535;
+}
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@1,600&family=Montserrat&family=Pacifico&family=Roboto&family=Rubik:wght@300;400;500;600;700;800&family=Slabo+27px&family=Source+Serif+4:opsz,wght@8..60,300&display=swap");
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Source Serif 4', serif; */
+
+/* .topnavbarmain{
+   background-color: blue;
+
+} */
+
+.mainheadertop {
+  /* background-color: #76e8ee; */
+  /* background-color: rgb(134, 134, 232); */
+  background-color: rgb(237, 226, 207);
+}
+
+/* .top20btn:hover{
+   background-color: #76e8ee;
+   border: 1px solid #76e8ee;
+   color: black;
+}
+.top20btn{
+   background-color: white;
+   border: 1px solid red;
+   color: black;
+} */
+
+/* button : start */
+
+.top20btn {
+  border: none;
+  outline: none;
+  color: black;
+  /* background: #111; */
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+.top20btn:hover {
+  color: black;
+  border: 2px solid #76e8ee;
+}
+
+.top20btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #76e8ee,
+    #60dfe5,
+    #35b7be,
+    #159ea5,
+    #0b787e,
+    #05797f,
+    #69bfc3,
+    #3f898d,
+    #24787c
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.top20btn:active {
+  color: #000;
+}
+
+.top20btn:active:after {
+  background: transparent;
+}
+
+.top20btn:hover:before {
+  opacity: 1;
+}
+
+.top20btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* button : end */
+
+/*  */
+
+.Best-Selling {
+  font-family: "Days one", sans-serif;
+}
+
+.carousel-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+
+  /* border-left: 0 solid #00ff99; */
+  /* border-left: 0 solid #e93535; */
+  /* border-right: 0 solid #e93535; */
+
+  transition: border 300ms ease-in-out, padding 300ms ease-in-out;
+  /* transition: border-right 300ms ease-in-out, padding-right 300ms ease-in-out;  */
+}
+
+.carousel-box:hover {
+  padding-left: 0.3rem;
+  border: 0.2rem solid #76e8ee;
+}
+/* products card */
+
+.absolute-top-right .fa-heart {
+  color: red;
+}
+.absolute-top-right .la-shopping-cart {
+  color: #00a4b4;
+}
+.absolute-top-right .la-sync {
+  color: #f96815;
+}
+
+.aiz-p-hov-icon a:hover {
+  background: #ffffff;
+  color: #fff;
+}
+
+/* .featured_categories {
+  border: 2px solid red; 
+  height: 300px; 
+} */
+.featured_categories img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.myrounded-10 {
+  border-radius: 10px;
+}
+.myrounded-15 {
+  border-radius: 15px;
+}
+.myrounded-20 {
+  border-radius: 20px;
+}
+
+.social_icon {
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
